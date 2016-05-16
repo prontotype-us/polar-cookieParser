@@ -73,6 +73,13 @@ function parse(str, options) {
       val = val.slice(1, -1);
     }
 
+    // prevent reading cookie from the wrong domain
+    if (undefined != options.domain) {
+      if (key.split(':')[1] != options.domain) {
+        continue;
+      }
+    }
+
     // only assign once
     if (undefined == obj[key]) {
       obj[key] = tryDecode(val, dec);

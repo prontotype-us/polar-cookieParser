@@ -51,7 +51,6 @@ module.exports = function cookieParser(secret, opt){
 
     if (cookies) {
       try {
-          console.log('[cookieParser] will parse', opt);
         req.cookies = cookie.parse(cookies, opt);
         if (secret) {
           req.signedCookies = utils.parseSignedCookies(req.cookies, secret);
