@@ -1,0 +1,16 @@
+{
+    "name": "polar-cookieParser",
+    "description": "cookie parsing and serialization",
+    "version": "0.1.0",
+    "author": "Sean Robertson <sprobertson@gmail.com",
+    "license": "MIT",
+    "keywords": [
+        "cookie",
+        "cookies"
+    ],
+    "repository": "prontotype-us/polar-cookieParser",
+    "dependencies": {
+        "bytes": "2.3.x",
+        "cookie-signature": "1.0.x"
+    }
+}
