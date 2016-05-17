@@ -74,8 +74,8 @@ function parse(str, options) {
     }
 
     // prevent reading cookie from the wrong domain
-    if (undefined != options.domain) {
-      if (key.split(':')[1] != options.domain) {
+    if (undefined != opt.domain) {
+      if (key.split(':')[1] != opt.domain) {
         continue;
       }
     }
